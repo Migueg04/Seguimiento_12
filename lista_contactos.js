@@ -1,12 +1,12 @@
 // Seleccionar elementos del DOM
 const contactForm = document.getElementById('contactForm');
 const contactList = document.getElementById('contactList');
-let editIndex = null; // Variable para almacenar el índice del contacto en edición
+let editIndex = null; 
 
 // Función para cargar contactos desde localStorage
 function loadContacts() {
     const contacts = JSON.parse(localStorage.getItem('contacts')) || [];
-    contactList.innerHTML = ''; // Limpiar la lista antes de mostrar
+    contactList.innerHTML = ''; // 
     contacts.forEach((contact, index) => {
         const contactItem = document.createElement('div');
         contactItem.classList.add('contact-item');
