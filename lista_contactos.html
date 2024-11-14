@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./lista_contactos.css">
+</head>
+<body>
+    
+    <div id="container">
+        <div id="contactos">
+            <div class="contactList" id="contactList">
+                <!-- Aquí se mostrarán los contactos -->
+            </div>
+        </div>
+        <div id="agregar">
+            <div class="titulo">
+                <h1 class="agregarcontactos">Agregar contactos</h1>
+            </div>
+            <form id="contactForm">
+                <div class="contenido">
+                    <h4>Nombre:</h4>
+                    <input type="text" id="name" placeholder="Escribe el nombre aquí" required>
+                    <hr>
+                    <h4>Teléfono:</h4>
+                    <input type="tel" id="phone" placeholder="Escribe el N° telefónico aquí" required>
+                    <hr>
+                    <h4>Email:</h4>
+                    <input type="email" id="email" placeholder="Escribe el Email aquí" required>
+                    <hr>
+                    <h4>Dirección:</h4>
+                    <input type="text" id="address" placeholder="Escribe la dirección aquí" required>
+                    <hr>
+                </div>
+                <div class="agregar">
+                    <button type="submit" class="btn-agregar">Agregar Contacto</button>
+                </div>
+            </form>
+
+            <form id="editContactForm" style="display: none;">
+                <h4>Nombre:</h4>
+                    <input type="text" id="name" placeholder="Escribe el nuevo nombre aquí" required>
+                    <hr>
+                    <h4>Teléfono:</h4>
+                    <input type="tel" id="phone" placeholder="Escribe el nuevo N° telefónico aquí" required>
+                    <hr>
+                    <h4>Email:</h4>
+                    <input type="email" id="email" placeholder="Escribe el nuevo Email aquí" required>
+                    <hr>
+                    <h4>Dirección:</h4>
+                    <input type="text" id="address" placeholder="Escribe la nueva dirección aquí" required>
+                    <hr>
+                <button type="submit">Actualizar Contacto</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./lista_contactos.js"></script>
+</body>
+</html>
